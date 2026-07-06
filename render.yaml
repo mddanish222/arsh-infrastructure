@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: project-tracker
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_LOGIN_PATH
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+    
