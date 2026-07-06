@@ -71,5 +71,3 @@ netlify.toml     → Netlify deployment + hidden-admin-route redirect
 ---
 
 
-## 📄 License
-MIT
