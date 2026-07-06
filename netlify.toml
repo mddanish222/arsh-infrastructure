@@ -2,6 +2,11 @@
   publish = "frontend"
   command = ""
 
+[[redirects]]
+  from = "/infrastructure-secret-admin22"
+  to = "/login.html"
+  status = 200
+
 # Enable CORS headers for static resources if needed
 [[headers]]
   for = "/*"
